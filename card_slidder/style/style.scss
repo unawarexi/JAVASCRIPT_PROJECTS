@@ -1,0 +1,142 @@
+*{
+    margin : 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left top, #3f45e5, #802ed7ea);
+    height: 100vh;
+    display: flex;
+}
+
+.swiper{
+    // display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 25rem auto;
+    width: 50%;
+}
+
+.swiper-slide {
+    background: #fff;
+    border-radius: 1rem;
+}
+
+.card {
+    text-align: center;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+
+    h2{
+        padding: 1rem;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+    }
+
+    span{
+        color: #a827df
+    }
+    
+    p{
+        font-size: smaller;
+        padding : 1rem;
+        color:#0000009c;
+    }
+
+    button{
+        padding : 0.8rem 1.2rem;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 1.2rem;
+        background: #666bf9;  
+        color:#fff;
+        font-weight: bold;
+        &:hover{
+            background: #3f45e5;
+        }
+        
+    }
+}
+
+
+.card .img {
+    display: flex;
+    flex-direction: column;
+    height: 148px;
+    width: 148px;
+    background: #a827df;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+
+.card .img img{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border : 4px solid #fff;
+    object-fit: cover;
+    background-position: center;
+    
+
+    
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .swiper{
+    // display: grid;
+    
+    height: 25rem auto;
+    width: 70%;
+}
+
+    
+
+
+}
+
+@media screen and (max-width: 992px) {
+/* Galaxy Tab */
+ 
+    
+
+}
+
+
+// .wrapper i {
+//     background: #fff;
+//     border-radius: 50%;
+//     height: 40px;
+//     width: 40px;
+//     text-align: center;
+//     line-height: 40px;
+//     // padding: 0.5rem;
+//     position: absolute;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     box-shadow: 0px 0px 5px  #262526;
+//     font-size: 1rem;
+//     cursor: pointer;
+// }
+
+// .wrapper i:first-child{
+//     left: -30px;
+// }
+// .wrapper i:last-child{
+//     right: -30px;
+// }

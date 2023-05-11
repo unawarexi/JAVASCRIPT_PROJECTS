@@ -1,0 +1,240 @@
+@media screen and (max-width: 768px) {
+  .close {
+    display: grid;
+    grid-column: span;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .forming {
+    width: 100%;
+    padding: 1rem;
+    margin: 20%;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* Galaxy Tab */
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body::before {
+  filter: blur(3px);
+  z-index: 1;
+  content: "";
+}
+
+body {
+  background: url(../assets/pexels-jonathan-borba-3316924.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.close {
+  display: flex;
+  margin: 2rem;
+}
+
+.forming {
+  display: flex;
+  margin-left: 20%;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.reg-form {
+  height: auto;
+  border-color: #52616b;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.reg-form legend {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background: #ef9273;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 20px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.reg-form input {
+  padding: 0.9rem 1rem;
+  width: 120%;
+  display: grid;
+  margin: 0.5rem;
+  margin-left: -12px;
+  border: none;
+  background: #52616b;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 500ms ease;
+}
+.reg-form input:hover {
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+
+.box[data-error] .FirstName {
+  border: 1px solid red;
+  color: #fb1c1c;
+  background: #f8dddd;
+}
+
+.box[data-error]::after {
+  content: attr(data-error);
+  font-size: 13px;
+  color: #f72525;
+  margin: 5px 0;
+  display: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.TC {
+  text-align: center;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.TC span {
+  color: #ef9273;
+  font-weight: bold;
+}
+
+.btn {
+  margin: 1rem;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 20px;
+  background: #2e3267;
+  color: #fff;
+  font-weight: bold;
+  width: 50%;
+  margin-left: 25%;
+  transition: ease 500ms;
+  padding: 0.7rem 1.8rem;
+  margin-left: 10%;
+}
+.btn:hover {
+  transform: scale(1.1);
+  background: #fff;
+  color: #000;
+}
+
+.login {
+  display: flex;
+  margin-left: 20%;
+  background: #1f2641;
+  margin: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  filter: opacity(1);
+}
+
+.login-form {
+  height: auto;
+  border-color: #fff;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.login-form legend {
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background: #ef9273;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding: 0.7rem 1rem;
+  margin-bottom: 20px;
+  color: #fff;
+  border-radius: 20px;
+}
+.login-form input {
+  padding: 1rem;
+  opacity: transparent;
+  width: 80%;
+  display: grid;
+  margin-left: 10%;
+  border: none;
+  background: #52616b;
+  border-radius: 7px;
+  color: #fff;
+  font-weight: bold;
+  transition: all 500ms ease;
+}
+.login-form p {
+  text-align: center;
+  font-size: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.login-form span {
+  color: #ef9273;
+  font-weight: bold;
+}
+.login-form .btn {
+  margin: 1rem;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 20px;
+  background: #2e3267;
+  color: #fff;
+  font-weight: bold;
+  width: 50%;
+  margin-left: 25%;
+  transition: ease 500ms;
+  background: #6c63ff;
+}
+
+.image {
+  height: 100px;
+  width: 50%;
+  display: flex;
+  gap: 3px;
+  margin: 1rem;
+}
+.image img {
+  height: 40px;
+  width: 40%;
+  background: #424890;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.input-1 {
+  background-repeat: no-repeat;
+  background-image: url(../assets/check.png);
+  border: 1px solid #00bf8e;
+  background-position: right 10px center;
+}
+
+.input-2 {
+  background-image: url(../assets/cancel.png);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}/*# sourceMappingURL=styles.css.map */

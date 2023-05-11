@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container"></div>
+          <div class="close">
+            <form class = forming>
+                <fieldset class="reg-form" >
+                <legend> User Registration </legend>
+
+                <div class="box" data-error="please enter a valid name">
+                    <input type="text"   class = "FirstName" placeholder="FirstName"><br>
+                    <div class="namesErr"></div>
+                </div>
+
+                <div class="box">
+                    <input type="text" placeholder="LastName" id = "lastNames"><br>
+                    <div class="namesErr"></div>
+                </div>
+
+                <div class="box">
+                    <input type ="email" placeholder="YourEmail.com" id ="emails"><br>
+                    <div class="emailErr"></div>
+                </div>
+                
+                <div class="box">
+                    <input type="password" placeholder="password" id ="passwords"><br>
+                    <div class="passwordErr"></div>
+                </div>
+
+                <div class="box">
+                    <input type = "password" placeholder="enter password again" id = "passwordAgn"><br>
+                    <div class="AgnErr"></div>
+                </div>
+
+
+                <p class = "TC">By clicking Submit you hereby agree to the <span> TERMS & CONDITION</span>  including 
+                   <span>  Policy Use </span></p>
+                <button class = "btn"> Submit </button>
+            </fieldset>
+          </form>
+
+
+           <form class = "login">
+           <fieldset class="login-form">
+               <legend>login</legend>
+
+               <div class="userID">
+                   <input type="text" placeholder="E-mail or UserID"><br>
+                   <div class="UserIDe-err"></div>
+               </div>
+               
+               <div class="psswrd">
+                   <input type="password" placeholder="correct password"><br>
+                   <div class="psswrdErr"></div>
+              </div>
+
+              
+              <button class = "btn"> Login </button>
+              <p>Don't have an account? <span>Register here</span></p>
+
+              
+            <div class="image">
+                <img src="./assets/logo 1.png" alt="instagram">
+                <img src="./assets/logo 2.png" alt="facebook">
+                <img src="./assets/logo 3.png" alt="twitter">
+                <img src="./assets/logo 4.png" alt="google">
+             </div> 
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+
+
+    
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> card slidder</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <div class="swiper mySwiper">
+    <div class="swiper-wrapper wrapper">
+
+      <div class="swiper-slide carousel ">
+        <div class=" card">
+                <div class="img"><img src="./assets/pexels-edmond-dantès-4347368.jpg" alt="img"></div>
+                <h2> freya patel </h2>
+                <span> marketing </span>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat assumenda deleniti quae pariatur aliquam!</p>
+                 <button> More </button>
+        </div>
+     </div>
+
+      <div class="swiper-slide carousel">
+        <div class="card">
+                <div class="img"><img src="./assets/pexels-emmy-e-2381069.jpg" alt="img"></div>
+                <h2> Sophia Smith </h2>
+                <span> Director </span>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat assumenda deleniti quae pariatur aliquam!</p>
+                 <button> More </button>
+            </div>
+      </div>
+
+      <div class="swiper-slide carousel">
+        <div class="card">
+                <div class="img"><img src="./assets/pexels-italo-melo-2379004.jpg" alt="img"></div>
+                <h2> joyner lucas </h2>
+                <span> C.O.O</span>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat assumenda deleniti quae pariatur aliquam!</p>
+                 <button> More </button>
+        </div>
+      </div>
+
+      <div class="swiper-slide carousel"> 
+        <div class="card">
+                <div class="img"><img src="./assets/pexels-christina-morillo-1181424.jpg" alt="img"></div>
+                <h2> olivia greene </h2>
+                <span> C.E.O </span>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat assumenda deleniti quae pariatur aliquam!</p>
+                 <button> More </button>
+        </div>
+
+      </div>
+
+      <div class="swiper-slide carousel">
+        <div class="card">
+                <div class="img"><img src="./assets/pexels-linkedin-sales-navigator-2182970.jpg" alt="img"></div>
+                <h2> Ben wil</h2>
+                <span> Sales </span>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat assumenda deleniti quae pariatur aliquam!</p>
+                <button> More </button>
+        </div>
+     </div>
+
+
+      <div class="swiper-slide carousel"> 
+        <div class="card">
+                <div class="img"><img src="./assets/pexels-pranav-digwal-32976.jpg" alt="img"></div>
+                <h2> Albert ryan </h2>
+                <span> C.F.O </span>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit placeat assumenda deleniti quae pariatur aliquam!</p>
+                <button> More </button>
+        </div>
+     </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+
+
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+     
+    <script src="./index.js" ></script>
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+
+      loop : true,
+      autoplay: true,
+      autoplayTimeout : 1000,
+      autoplayHoverPause: true,
+
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+
+
+    });
+  </script>
+</body>
+</html>

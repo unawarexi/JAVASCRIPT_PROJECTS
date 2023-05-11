@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left top, #3f45e5, rgba(128, 46, 215, 0.9176470588));
+  height: 100vh;
+  display: flex;
+}
+
+.swiper {
+  align-items: center;
+  justify-content: center;
+  height: 25rem auto;
+  width: 50%;
+}
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 1rem;
+}
+
+.card {
+  text-align: center;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+}
+.card h2 {
+  padding: 1rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.card span {
+  color: #a827df;
+}
+.card p {
+  font-size: smaller;
+  padding: 1rem;
+  color: rgba(0, 0, 0, 0.6117647059);
+}
+.card button {
+  padding: 0.8rem 1.2rem;
+  width: 40%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 1.2rem;
+  background: #666bf9;
+  color: #fff;
+  font-weight: bold;
+}
+.card button:hover {
+  background: #3f45e5;
+}
+
+.card .img {
+  display: flex;
+  flex-direction: column;
+  height: 148px;
+  width: 148px;
+  background: #a827df;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card .img img {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper {
+    height: 25rem auto;
+    width: 70%;
+  }
+}
+@media screen and (max-width: 992px) {
+  /* Galaxy Tab */
+}/*# sourceMappingURL=style.css.map */

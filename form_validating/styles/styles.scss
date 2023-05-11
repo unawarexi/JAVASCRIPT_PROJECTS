@@ -1,0 +1,278 @@
+@import  "./mobile";
+
+@mixin button {
+    margin : 1rem;
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 20px;
+    background: $color-bg1;
+    color: $color-white;
+    font-weight: bold;
+    width: 50%;
+    margin-left: 25%;
+    transition: ease 500ms;
+
+}
+
+@mixin legend{ 
+    
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    background: $primary_color;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding: 0.7rem 1rem;
+    margin-bottom: 20px;
+    color : $color-white;
+    border-radius: 20px;     
+    
+
+}
+
+$primary_color: #ef9273;
+$secondary_color: #1E2022;
+$backgrund_color: #c9d6df;
+$shadow: #282827;
+$compliment: #52616b;
+$softner: #f0f5f9;
+$color-primary: #6c63ff;
+$color-success: #00bf8e;
+$color-warning: #f7c94b;
+$color-danger: #f75842;
+$color-danger-variant: rgba(247,88, 66, 0.4);
+$color-white: #fff;
+$color-black: #000;
+$color-bg: #1f2641;
+$color-bg1: #2e3267;
+$color-bg2:#424890;
+$transition: all 500ms ease;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+
+}
+
+body::before{
+    filter: blur(3px);
+    z-index: 1;
+    content: "";
+}
+
+body {
+    background: url(../assets/pexels-jonathan-borba-3316924.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+}
+
+
+.close{
+    display: flex;
+    margin: 2rem;
+    
+}
+
+.forming {
+    // width: 50%;
+    display: flex;
+    margin-left: 20%;
+    background: $color-white;
+    border-radius: 20px;
+    
+}
+.reg-form {
+    // background: $softner;
+    height: auto;
+    border-color: $compliment;
+    display: flex;
+    flex-direction: column;
+    margin:1rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg-form legend{
+    @include legend();
+
+}
+
+.reg-form input{
+    padding: 0.9rem 1rem;
+    width: 120%;
+    display: grid;
+    margin: 0.5rem;
+    margin-left: -12px;
+    border: none;
+    background: $compliment;
+    border-radius: 7px;
+    color: $color-white;
+    font-weight: bold;
+    transition: $transition;
+    &:hover{
+        background: $color-white;
+        color : $color-black;
+        font-weight: bold;
+        border: 1px solid $color-black;
+    }
+}
+
+
+.box[data-error] .FirstName{
+    border:1px solid red;
+    color: #fb1c1c;
+    background : #f8dddd;
+
+}
+
+.box[data-error]::after{
+    content: attr(data-error);
+    font-size: 13px;
+    color: #f72525;
+    margin: 5px 0;
+    display: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.TC {
+    text-align: center;
+    font-size: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     span{
+        color: $primary_color;
+        font-weight: bold;
+    }
+}
+
+.btn{
+
+    @include button();
+    padding: 0.7rem 1.8rem;
+    margin-left: 10% ;
+   
+    &:hover{
+        transform: scale(1.1);
+        background: $color-white;
+        color: $color-black;
+        
+    }
+
+}
+
+.login {
+    display: flex;
+    // width: 50%;
+    margin-left: 20%;
+    background: $color-bg;
+    margin : 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    filter: opacity(1);
+    
+}
+
+.login-form{
+    height: auto;
+    border-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    margin :1rem;
+    border-radius: 10px;
+
+    legend{ 
+        @include legend();
+    }
+
+    input{ 
+        padding: 1rem;
+        opacity: transparent;
+        width: 80%;
+        display: grid;
+        margin-left: 10%;
+        border: none;
+        background: $compliment;
+        border-radius: 7px;
+        color: $color-white;
+        font-weight: bold;
+        transition: $transition;
+
+    }
+
+    p{
+        text-align: center;
+        font-size: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color : $color-white;
+        margin-bottom: 20px;
+
+    }
+
+    span{ 
+        color: $primary_color;
+        font-weight: bold;
+     }
+
+     .btn{
+        @include button();
+        background: $color-primary;
+        
+     }
+
+}
+
+
+
+
+.image{
+     height: 100px;
+     width: 50%;
+    display: flex;
+    gap : 3px;
+    margin : 1rem;
+    
+    
+
+    img { 
+        
+        height: 40px;
+        width: 40%;
+        background: $color-bg2;
+        padding: 0.5rem;
+        border-radius: 50%;
+
+    }
+
+    
+}
+
+.input-1 {
+    background-repeat: no-repeat;
+    background-image: url(../assets/check.png);
+    border: 1px solid #00bf8e;
+    background-position: right 10px center;
+}
+
+
+.input-2{
+    background-image: url(../assets/cancel.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+
+
+
